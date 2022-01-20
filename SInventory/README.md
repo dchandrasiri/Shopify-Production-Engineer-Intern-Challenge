@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dependancies
+Ruby version 3.0.3
+Sqlite3 version 3.37.2
+Rails 7.0.1
+CSV 3.2.2
 
-Things you may want to cover:
+In order to launch web app, make sure all dependancies are installed. Once installed, from the program folder, in command line write 
 
-* Ruby version
+rails s
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+this starts the development server. 
