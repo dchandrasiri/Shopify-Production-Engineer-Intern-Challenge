@@ -1,6 +1,7 @@
 # README
 
 Dependancies
+
 Ruby version 3.0.3
 Sqlite3 version 3.37.2
 Rails 7.0.1
