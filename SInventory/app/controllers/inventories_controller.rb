@@ -4,6 +4,10 @@ class InventoriesController < ApplicationController
   # GET /inventories or /inventories.json
   def index
     @inventories = Inventory.all
+    respond_to do |format|
+        format.html
+        format.csv { send_data @inventories.to_csv }
+    end
   end
 
   # GET /inventories/1 or /inventories/1.json

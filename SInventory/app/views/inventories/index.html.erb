@@ -1,14 +1,23 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Inventories</h1>
-
-<div id="inventories">
+<h1>Inventory</h1>
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+         <th>Item</th>
+        <th>SKU</th>
+        <th colspan="3"> </th>
+      </tr>
+    </thead>
+<tbody>
   <% @inventories.each do |inventory| %>
-    <%= render inventory %>
-    <p>
-      <%= link_to "Show this inventory", inventory %>
-    </p>
+  <tr>
+    <td><%= inventory.item %></td>
+    <td><%= inventory.SKU %></td>
+    <td><%= link_to "Show", inventory %>
+    <td><%= link_to "Edit", edit_inventory_path(inventory) %></td> 
+    <td> <%= link_to "Destroy", @inventory, method: :delete %></td> 
+  </tr>
   <% end %>
-</div>
+</tbody>
+</table>
 
-<%= link_to "New inventory", new_inventory_path %>
+<%= link_to "New Item", new_inventory_path , class:"btn btn-secondary" %>
